@@ -148,6 +148,9 @@ const UpperNav = () => {
           </div>
           <Link
             href={"/contact"}
+            onClick={() => {
+              setMenuOpend(false);
+            }}
             className="btn text-white bg-primary border-0 rounded-[20px] shadow-lg"
           >
             Contact Us

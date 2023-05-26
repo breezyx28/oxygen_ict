@@ -183,7 +183,7 @@ const contact = () => {
                     </div>
 
                     <div className="w-full mt-6">
-                      <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
+                      <label className="block mb-2 text-sm text-gray-600">
                         Message
                       </label>
                       <textarea

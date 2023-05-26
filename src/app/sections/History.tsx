@@ -19,12 +19,12 @@ const History = () => {
         </span>
       </div>
       <div className="container w-full px-6 py-12 mx-auto flex justify-center">
-        <ol className="relative history-animation fade-bottom border-l border-gray-200 dark:border-gray-700">
+        <ol className="relative history-animation fade-bottom border-l border-gray-200 ">
           <li className="mb-10 ml-6">
-            <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white ">
               <svg
                 aria-hidden="true"
-                className="w-3 h-3 text-primary dark:text-blue-300"
+                className="w-3 h-3 text-primary "
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -37,20 +37,20 @@ const History = () => {
               </svg>
             </span>
             <Link href={"/products/central"} className="link link-hover">
-              <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+              <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 ">
                 Centeral{" "}
               </h3>
             </Link>
-            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 ">
               Released on January 13th, 2022
             </time>
-            <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+            <p className="mb-4 text-base font-normal text-gray-500 ">
               Electronic Phonebook
             </p>
             <div className="flex gap-x-4 items-center">
               <a
                 href="#"
-                className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-primary focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-primary dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+                className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-primary focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-primary "
               >
                 <svg
                   className="w-4 h-4 mr-2"
@@ -75,7 +75,7 @@ const History = () => {
               </a>
               <a
                 href="#"
-                className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-primary focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-primary dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+                className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-primary focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-primary "
               >
                 <svg
                   className="w-4 h-4 mr-2"
@@ -93,10 +93,10 @@ const History = () => {
             </div>
           </li>
           <li className="mb-10 ml-6">
-            <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white ">
               <svg
                 aria-hidden="true"
-                className="w-3 h-3 text-primary dark:text-blue-300"
+                className="w-3 h-3 text-primary "
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -109,22 +109,22 @@ const History = () => {
               </svg>
             </span>
             <Link href={"/products/kpsolla"} className="link link-hover">
-              <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+              <h3 className="mb-1 text-lg font-semibold text-gray-900 ">
                 Kpsolla
               </h3>
             </Link>
-            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 ">
               Released on December 7th, 2021
             </time>
-            <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+            <p className="text-base font-normal text-gray-500 ">
               Kpsolla educational platform and professional training
             </p>
           </li>
           <li className="ml-6">
-            <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white ">
               <svg
                 aria-hidden="true"
-                className="w-3 h-3 text-primary dark:text-blue-300"
+                className="w-3 h-3 text-primary "
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -137,14 +137,14 @@ const History = () => {
               </svg>
             </span>
             <Link href={"/products/solar"} className="link link-hover">
-              <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+              <h3 className="mb-1 text-lg font-semibold text-gray-900 ">
                 Electricity/Solar
               </h3>
             </Link>
-            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 ">
               Released on Septemper 2nd, 2021
             </time>
-            <p className="text-base font-normal text-gray-500 dark:text-gray-400 md:max-w-[400px] max-w-[200px]">
+            <p className="text-base font-normal text-gray-500  md:max-w-[400px] max-w-[200px]">
               Utilizing IoT in solar energy production includes sensors attached
               to the transmission, generation, and distribution equipment to
               observe and manage businesses from a distance without physical

@@ -6,11 +6,11 @@ const about = () => {
   return (
     <>
       <Jumbotrun pageName={"About Us"} />
-      <section className="section-container z-50 bg-white">
+      <section className="section-container py-0 z-50 bg-white">
         <div className="container px-6 py-10 mx-auto">
-          <div className="wrapper flex justify-center gap-x-[1rem] items-center w-full">
-            <div className="flex flex-col items-center gap-y-[1rem]">
-              <div className="section-text">
+          <div className="wrapper flex md:flex-row flex-col justify-center md:gap-x-[1rem] gap-x-0 gap-y-[1rem] items-center w-full">
+            <div className="flex flex-col items-center gap-y-[1rem] md:order-1 order-2">
+              <div className="section-text md:pt-0 pt-4">
                 Who Are <span className="text-primary">We</span>
               </div>
               <p className="mt-4 text-gray-500 xl:mt-6 max-w-[1000px]">
@@ -26,7 +26,7 @@ const about = () => {
                 Senegal.
               </p>
             </div>
-            <div className="w-full h-full flex justify-center">
+            <div className="w-full h-full flex justify-center md:order-2 order-1">
               <Image
                 className="max-w-[450px] object-cover"
                 src={"/images/building.jpg"}
@@ -38,7 +38,7 @@ const about = () => {
           </div>
         </div>
         <div className="container px-6 py-10 mx-auto">
-          <div className="wrapper flex justify-between items-center w-full h-full">
+          <div className="wrapper flex md:flex-row flex-col justify-between items-center w-full h-full">
             <div className="w-full h-full flex justify-center">
               <Image
                 className="max-w-[450px] object-cover"
@@ -49,7 +49,7 @@ const about = () => {
               />
             </div>
             <div className="flex flex-col items-center gap-y-[1rem]">
-              <div className="section-text">
+              <div className="section-text md:pt-0 pt-4">
                 What Drives <span className="text-primary">Us</span>
               </div>
               <p className="mt-4 text-gray-500 xl:mt-6 max-w-[1000px]">
@@ -63,7 +63,7 @@ const about = () => {
           </div>
         </div>
         <div className="container px-6 py-10 mx-auto">
-          <div className="wrapper flex justify-between items-center w-full h-full">
+          <div className="wrapper flex md:flex-row flex-col justify-center md:gap-x-[1rem] gap-x-0 gap-y-[1rem] items-center w-full h-full">
             <div className="w-full h-full flex justify-center">
               <Image
                 className="max-w-[450px] object-cover"
@@ -74,7 +74,7 @@ const about = () => {
               />
             </div>
             <div className="flex flex-col items-center gap-y-[1rem]">
-              <div className="section-text">
+              <div className="section-text md:pt-0 pt-4">
                 <span className="text-primary">Oxygen</span> Values
               </div>
               <p className="mt-4 text-gray-500 xl:mt-6 max-w-[1000px]">
@@ -92,9 +92,8 @@ const about = () => {
             </div>
           </div>
         </div>
-
         <div className="container px-6 py-10 mx-auto">
-          <div className="wrapper flex justify-between items-center w-full h-full">
+          <div className="wrapper flex md:flex-row flex-col justify-center md:gap-x-[1rem] gap-x-0 gap-y-[1rem] items-center w-full h-full">
             <div className="w-full h-full flex justify-center">
               <Image
                 className="max-w-[450px] object-cover"
@@ -105,7 +104,9 @@ const about = () => {
               />
             </div>
             <div className="flex flex-col items-center gap-y-[1rem]">
-              <div className="section-text">Mission & Milestones</div>
+              <div className="section-text md:pt-0 pt-4">
+                Mission & Milestones
+              </div>
               <p className="mt-4 text-gray-500 xl:mt-6 max-w-[1000px]">
                 Oxygen Technologies’ mission is to develop smart connecting
                 solutions that make African people life better and more

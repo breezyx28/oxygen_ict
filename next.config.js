@@ -5,7 +5,7 @@
 const nextConfig = {
   // output: "export",
   experimental: {
-    appDir: false,
+    appDir: true,
   },
   build: {
     transpile: ["gsap"],

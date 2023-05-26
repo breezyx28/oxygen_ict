@@ -1,8 +1,15 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
-}
+// const withTM = require("next-transpile-modules")(["gsap"]);
 
-module.exports = nextConfig
+// module.exports = withTM({});
+const nextConfig = {
+  // output: "export",
+  experimental: {
+    appDir: false,
+  },
+  build: {
+    transpile: ["gsap"],
+  },
+};
+
+module.exports = nextConfig;

@@ -66,8 +66,10 @@ const UpperNav = () => {
         </Link>
         <div
           className={`fixed bg-white shadow-sm ${
-            menuOpened ? "left-0" : "-left-[100vw]"
-          } duration-200 ease-in top-0 w-screen z-50 h-screen flex flex-col justify-between px-10 py-4`}
+            menuOpened
+              ? "uppernav-mobile-slide-0"
+              : "uppernav-mobile-slide-full"
+          } duration-200 ease-in top-0 w-full z-50 h-screen flex flex-col justify-between px-10 py-4`}
         >
           <div className="wrapper flex flex-col gap-y-10">
             <div className="flex justify-between items-center">

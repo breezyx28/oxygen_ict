@@ -37,7 +37,8 @@ const Partners = () => {
         <div className="gsap-from-bottom partner-title text-2xl text-slate-600 font-semibold capitalize">
           our partners
         </div>
-        <div className="w-full md:max-h-[300px] h-auto flex flex-wrap md:gap-x-[100px] gap-[50px] md:p-0 p-6 items-center md:justify-center">
+        <div className="w-full md:max-h-[300px] h-auto flex flex-wrap md:gap-x-[100px] md:p-0 p-6 gap-8 justify-center items-center md:justify-center">
+          {/* <div className="w-full md:max-h-[300px] h-auto flex flex-wrap md:gap-x-[100px] gap-[50px] md:p-0 p-6 items-center md:justify-center"> */}
           {partners?.map((item: any) => (
             <div
               key={item.id}

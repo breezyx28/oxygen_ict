@@ -7,7 +7,8 @@ import heroAnimation from "@/helper/animations/heroAnimation";
 
 const Hero = () => {
   React.useEffect(() => {
-    requestAnimationFrame(heroAnimation);
+    // requestAnimationFrame();
+    heroAnimation();
   }, []);
   return (
     <section id="home" className="hero-section">

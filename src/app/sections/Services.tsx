@@ -9,7 +9,8 @@ import React from "react";
 
 const Services = () => {
   React.useEffect(() => {
-    requestAnimationFrame(servicesAnimation);
+    // requestAnimationFrame(servicesAnimation);
+    servicesAnimation();
   }, []);
 
   return (

@@ -24,7 +24,8 @@ const Pattern = () => {
   }
   React.useEffect(() => {
     // Call requestAnimationFrame to start the animation
-    requestAnimationFrame(animateLines);
+    // requestAnimationFrame();
+    animateLines();
   }, []);
 
   return (

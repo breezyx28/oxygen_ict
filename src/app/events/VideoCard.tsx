@@ -45,9 +45,7 @@ const VideoCard = ({ path, title, description, index }: Iprops) => {
       });
       controlLayer?.addEventListener("mouseleave", (e) => {
         overlayLayer?.classList.remove("bg-gradient-video-layer");
-        requestAnimationFrame(() => {
-          videoCardFadeInTop(`#${controlLayer?.id}`);
-        });
+        videoCardFadeInTop(`#${controlLayer?.id}`);
       });
     } else {
       console.log("played false");
@@ -55,15 +53,11 @@ const VideoCard = ({ path, title, description, index }: Iprops) => {
         overlayLayer?.classList.contains("bg-gradient-video-layer") === false
       ) {
         overlayLayer?.classList.add("bg-gradient-video-layer");
-        requestAnimationFrame(() => {
-          initVideoCardFadeInTop(`#${controlLayer?.id}`);
-          initVideoCardFadeOutBottom(`#${controlLayer?.id}`);
-        });
+        initVideoCardFadeInTop(`#${controlLayer?.id}`);
+        initVideoCardFadeOutBottom(`#${controlLayer?.id}`);
       } else {
-        requestAnimationFrame(() => {
-          initVideoCardFadeInTop(`#${controlLayer?.id}`);
-          initVideoCardFadeOutBottom(`#${controlLayer?.id}`);
-        });
+        initVideoCardFadeInTop(`#${controlLayer?.id}`);
+        initVideoCardFadeOutBottom(`#${controlLayer?.id}`);
       }
     }
   }, [played]);

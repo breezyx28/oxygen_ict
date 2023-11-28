@@ -4,12 +4,13 @@ import Logo from "@/components/logo/Logo";
 import { Svg } from "@/components/icons";
 import VideoModal from "@/components/modals/VideoModal";
 import heroAnimation from "@/helper/animations/heroAnimation";
+import Object from "@/components/3D/Object";
 
 const Hero = () => {
   React.useEffect(() => {
-    // requestAnimationFrame();
     heroAnimation();
   }, []);
+
   return (
     <section id="home" className="hero-section">
       <div className="grid grid-flow-cols place-items-center md:grid-cols-2 grid-cols-1 md:gap-x-10 gap-x-4 h-full">
@@ -49,12 +50,13 @@ const Hero = () => {
           <div className="bg-pattern-pie"></div>
         </div> */}
         <div className="relative h-[70%] w-[70%] md:flex justify-center hidden">
-          <div className="absolute gsap-from oxygen-hero-circle w-full h-full bg-primary z-10 pattern-pie backdrop-blur-lg rounded-full shadow-inner"></div>
+          <Object />
+          {/* <div className="absolute gsap-from oxygen-hero-circle w-full h-full bg-primary z-10 pattern-pie backdrop-blur-lg rounded-full shadow-inner"></div>
           <div className="flex justify-center items-center w-full h-full">
             <div className="p-[30px] bg-primary gsap-from oxygen-hero-circle rounded-full z-20">
               <Logo />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

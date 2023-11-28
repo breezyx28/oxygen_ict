@@ -2,6 +2,12 @@ import Jumbotrun from "@/components/pages/Jumbotrun";
 import React from "react";
 import VideoCard from "./VideoCard";
 import EventImage from "./EventImage";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Events - Oxygen ICT",
+  description: "Oxygen events",
+};
 
 const events = () => {
   return (

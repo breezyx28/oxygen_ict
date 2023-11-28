@@ -1,6 +1,12 @@
 import Jumbotrun from "@/components/pages/Jumbotrun";
 import Image from "next/image";
 import React from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Page - Oxygen ICT",
+  description: "About us",
+};
 
 const about = () => {
   return (

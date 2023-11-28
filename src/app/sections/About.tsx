@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import aboutAnimation from "@/helper/animations/aboutAnimation";
+// import CanvasPlayground from "@/components/3D/CanvasPlayground";
+// import Object from "@/components/3D/Object";
 
 const About = () => {
   React.useEffect(() => {
@@ -36,8 +38,10 @@ const About = () => {
             </button>
           </div>
           <div className="relative about-animation fade-left md:flex flex-col items-center hidden">
-            <div className="w-[400px] z-10">
+            <div className="w-full h-full z-10">
               <img src="/icons/oxygen_3d.png" />
+              {/* <Object /> */}
+              {/* <CanvasPlayground /> */}
             </div>
           </div>
         </div>

@@ -3,12 +3,35 @@ import ProductLayout from "./ProductLayout";
 import PhoneDevice from "./PhoneDevice";
 import { Svg } from "@/components/icons";
 import Link from "next/link";
+import { Metadata, ResolvingMetadata } from "next";
 
 type ProductProps = {
   params: {
     product: String;
   };
 };
+
+// // fetching dynamic metdata
+// export async function generateMetadata(
+//   { params }: ProductProps,
+//   parent?: ResolvingMetadata
+// ): Promise<Metadata> {
+//   // read route params
+//   const id = params.product;
+
+//   // fetch data
+//   const product = await fetch(`https://.../${id}`).then((res) => res.json());
+
+//   // optionally access and extend (rather than replace) parent metadata
+//   // const previousImages = (await parent).openGraph?.images || [];
+
+//   return {
+//     title: product.title,
+//     // openGraph: {
+//     //   images: ["/some-specific-page-image.jpg", ...previousImages],
+//     // },
+//   };
+// }
 
 const Product = ({ params: { product } }: ProductProps) => {
   return (
@@ -20,7 +43,7 @@ const Product = ({ params: { product } }: ProductProps) => {
               <h2 className="md:text-7xl text-4xl text-center md:text-start text-slate-800 font-extrabold capitalize">
                 {product}
               </h2>
-              <p className="text-gray-600 md:text-[20px] text-[16px] max-w-[800px]">
+              <p className="text-gray-600 md:px-[0px] px-[20px] md:text-[20px] text-[16px] max-w-[800px]">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
                 voluptas voluptate earum quo debitis qui id ipsum rerum eos.
                 Consequatur quibusdam quos ut? Dicta officia impedit beatae

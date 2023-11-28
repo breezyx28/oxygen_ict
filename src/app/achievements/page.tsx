@@ -3,6 +3,12 @@ import React from "react";
 import OrbitComponent from "./OrbitComponent";
 import AppCard from "./AppCard";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Our Achievements - Oxygen ICT",
+  description: "Oxygen achievements",
+};
 
 const achievements = () => {
   return (

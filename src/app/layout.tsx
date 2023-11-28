@@ -1,7 +1,8 @@
 import UpperNav from "@/components/UpperNav";
 import "./globals.css";
 import Footer from "./sections/Footer";
-import React from "react";
+import React, { Suspense } from "react";
+import Loading from "./loading";
 
 export const metadata = {
   title: "Oxygen Technology Co.",
@@ -16,10 +17,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="overflow-x-hidden bg-gradient">
-        <UpperNav />
-        {children}
-        <Footer />
+      <body dir="ltr" className="overflow-x-hidden bg-gradient max-w-[1800px]">
+        <Suspense fallback={<Loading />}>
+          <UpperNav />
+          {children}
+          <Footer />
+        </Suspense>
       </body>
     </html>
   );

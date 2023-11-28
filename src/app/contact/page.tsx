@@ -1,5 +1,11 @@
 import Jumbotrun from "@/components/pages/Jumbotrun";
 import React from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Us - Oxygen ICT",
+  description: "contact us",
+};
 
 const contact = () => {
   return (

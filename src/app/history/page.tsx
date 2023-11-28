@@ -3,6 +3,12 @@ import Jumbotrun from "@/components/pages/Jumbotrun";
 import Link from "next/link";
 import React from "react";
 import HistoryItem from "./HistoryItem";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Our History - Oxygen ICT",
+  description: "Oxygen history",
+};
 
 const history = () => {
   return (

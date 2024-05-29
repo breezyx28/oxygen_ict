@@ -3,7 +3,7 @@ const { i18n } = require("./next-i18next.config");
 
 // module.exports = withTM({});
 const nextConfig = {
-  i18n,
+  // i18n,
   // output: "export",
   experimental: {
     appDir: true,

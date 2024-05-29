@@ -35,6 +35,9 @@
   },
   "devDependencies": {
     "@types/gsap": "^3.0.0",
-    "@types/three": "^0.152.1"
+    "@types/three": "^0.152.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.2.6",
+    "tailwind-merge": "^2.3.0"
   }
 }

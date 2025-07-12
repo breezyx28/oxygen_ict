@@ -17,4 +17,9 @@ module.exports = {
     },
   },
   plugins: [daisyui],
+  // daisyUI config (optional - here are the default values)
+  daisyui: {
+    themes: false, // true: all themes | false: only light + dark | array: specific themes like this ["light", "dark", "cupcake"]
+    darkTheme: false,
+  },
 };
